@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    color: #ff0000;
+    font-size: 24px;
+    font-family:'Lucida Sans';
+    margin-bottom: 10px;
+    text-align:center;
+}
+
+header{
+    background-color: #776b6d;
+    padding: 10px;
+    text-align: center;
+}
+
+ nav{
+    padding: 10px;
+    text-align: right;
+ }
+
+nav a{
+    color: #000;
+}
+
+nav a:hover{
+    color: #f00
+
+
+}
+
+footer{
+    background-color: #776b6d;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+
