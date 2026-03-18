@@ -2,40 +2,159 @@
     margin: 0;
     padding: 0;
 }
-
-h1{
-    color: #ff0000;
-    font-size: 24px;
-    font-family:'Lucida Sans';
-    margin-bottom: 10px;
-    text-align:center;
+body{
+    display: flex;
+    flex-direction: column;
 }
 
+html,body{
+    height: 100%;
+}
+main{
+    flex:1
+}
+
+ 
+h1{
+    color: #5f6b69;
+    font-size: 24px;
+    font-family: "Lucida sans", sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.sobre{
+    color: #93cfc5;
+    font-size: 68px;
+    font-family: "Lucida sans", sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.SobreNos{
+    color: #3e8579;
+    font-size: 30px;
+    font-family: "Lucida sans", sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+}
+ 
+.TextoSobre{
+    color: black;
+    font-size: 20px;
+    font-family: "Lucida sans", sans-serif;
+    text-align: justify;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    padding: 0 20px;
+}
+ 
+.LogoJava{
+    display: block;
+    padding: 20 20px;
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+    float: left;
+    line-height: 1.5;
+    margin-bottom: 1px;
+}
+.logocss{
+    display: block;
+    padding: 20 20px;
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+    float: left;
+    line-height: 1.5;
+    margin-bottom: 1px;
+}
+.Contato{
+    color: #3e8579;
+    font-size: 30px;
+    font-family: "Lucida sans", sans-serif;
+    text-align: center;
+    margin-bottom: 5px;
+ }
+.TextoContato{
+    color: black;
+    font-size: 20px;
+    font-family: "Lucida sans", sans-serif;
+    text-align: left;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+.ListaOrdenada, .ListaNaoOrdenada{
+    color: #030303;
+    font-size: 20px;
+    font-family: "Lucida sans", sans-serif;
+    text-align: left;
+    margin-bottom: 5px;
+    padding: 0 80px;
+}
+.TextoLista{
+    color: black;
+    font-size: 20px;
+    font-family: "Lucida sans", sans-serif;
+    text-align: left;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+.TituloListaInfo{
+    color: #3e8579;
+    font-size: 30px;
+    font-family: "Courier New", Courier, monospace;
+    text-align: left;
+    margin-bottom: 5px;
+    padding: 0 20px;
+}
+.TituloLista{
+    color: #3e8579;
+    font-size: 30px;
+    font-family: "Courier New", Courier, monospace;
+    text-align: left;
+    margin-bottom: 5px;
+    padding: 0 20px;
+}
+ 
 header{
-    background-color: #776b6d;
+    background-color: #b6dfbf;
     padding: 10px;
     text-align: center;
+ 
 }
-
- nav{
+.menu{
+    background-color: #73928d;
     padding: 10px;
-    text-align: right;
+    text-align: center;
+ 
+}
+nav{
+    padding: 10px;
+    text-align: right
+ 
  }
-
-nav a{
-    color: #000;
-}
-
-nav a:hover{
-    color: #f00
-
-
-}
-
-footer{
-    background-color: #776b6d;
+ nav a{
+    color: black;
+    text-decoration: none;
+ 
+ }
+ .batata{
+    color: #3e8579;
+ }
+ nav a:hover{
+    color: #298b3e
+ 
+ }
+ 
+ footer{
+    background-color: #b6dfbf;
     padding: 10px;
     text-align: center;
     margin-top: 10px;
+ 
+ }
+img{
+    height: 100px;
+    width: 100px;
 }
-
