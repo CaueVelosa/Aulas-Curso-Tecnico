@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIPOS DE INPUT</title>
+    <link rel="stylesheet" href="input.css">
+</head>
+<body>
+    <h1>
+        Exemplo de Inputs
+    </h1>
+    <form>
+        <label>Texto</label>
+        <input type="text" placeholder="Nome Completo">
+
+        <label>Senha</label>
+        <input type="password" placeholder="Senha">
+
+        <label>Email</label>
+        <input type="email" placeholder="email@gmail.com">
+
+        <label>Número</label>
+        <input type="number" placeholder="Número" min="1" max="500">
+
+        <label>Telefone</label>
+        <input type="tel" placeholder="(99) 99999-9999">
+
+        <label>URL:</label>
+        <input type="url" placeholder="https://example.com">
+
+        <label>Data</label>
+        <input type="date" placeholder="dd/mm/aaaa">
+
+        <label>Data e Hora</label>
+        <input type="datetime-local" placeholder="dd/mm/aaaa hh:mm:ss">
+
+        <!--APENAS HORA-->
+        <label>Hora</label>
+        <input type="time" placeholder="hh:mm:ss">
+
+        <!--MES-->
+        <label>Mês</label>
+        <input type="month" placeholder="mm">
+
+        <label>Cor</label>
+        <input type="color">
+
+        <label>checkbox</label>
+        <input type="checkbox"> Aceito os termos e condições
+
+        <label>Radio</label>
+        <input type="radio" name="genero" value="M"> Masculino
+        <input type="radio" name="genero" value="F"> Feminino
+
+        <label>Mensagem</label>
+        <textarea placeholder="Digite sua mensagem aqui..."> </textarea>
+
+        <!--Lista suspensa-->
+        <label>Escolha uma opção</label>
+        <select>
+            <option value="">Selecione</option>
+            <option value="opçao1">Piracicaba</option>
+            <option value="opçao2">Campinas</option>
+            <option value="opçao3">Sao Paulo</option>
+        </select>
+
+        <!--Faixa de Valores-->
+        <label>Faixa de Valores</label>
+        <input type="range" min="0" max="100" value="50">
+
+        <label>Enviar Aqruivo:</label>
+        <input type="file">
+
+
+
+        <div class="buttons">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+
+    </form>
+</body>
+</html>
