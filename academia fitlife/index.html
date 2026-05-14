@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -5,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="./style/reset.css"> <!--PRIMEIRO O RESET - SEMPRE-->
+    <link rel="stylesheet" href="./style/style.css">
     <title>FitLife Academia</title>
 
 </head>
@@ -12,6 +15,7 @@
     
     <header class="cabecalho">
         <div class="logo">
+            <!--Coloca o nome da empresa-->
             Fit<span>Life</span>
         </div>
             <div>
@@ -23,76 +27,142 @@
                     </ul>
                 </nav>
             </div>
+ 
+        <!--menu superior esquerda-->
+        <nav class="menu" id="menu"> <!--id="menu", pois vamos usar JS-->
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#planos">Planos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
     </header>
+ 
+    <!--O main não pode ficar em cima do header-->
     <main>
-        <section class="hero" id="menu">
+        <!--Primeira parte da tela-->
+        <section class="hero" id="home">
+           
+            <!--Conteúdo da primeira parte da tela-->
             <div class="hero-conteudo">
                 <h1>Transforme seu corpo e sua mente</h1>
-                <p>Treine com estrutura moderna, professores qualidifcados e planos que cabem no seu bolso.</p>
-                <a href="#planos" class="botao">Conhecer Planos</a>
+                <p>Treine com estrutura moderna, professores qualificados e planos que cabem no seu bolso.</p>
+ 
+                <a href="#planos" class="botao">Conhecer Planos</a>    
             </div>
         </section>
+ 
+        <!--SEGUNDA PARTE DA TELA-->
         <section class="sobre">
             <h2>Por que escolher a FitLife?</h2>
-
-            <div class="beneficios">
+ 
+            <div class="beneficios"> <!--Alinha os cards dos beneficios-->
                 <div class="beneficio">
-                    <h3> Equipamentos modernos</h3>
-                    <p>Aparelhos seguros e atualizados para todos os níveis de treino</p>
+                    <h3>Equipamentos modernos</h3>
+                    <p>Aparelhos seguros e atualizados para todos os níveis de treino.</p>
                 </div>
-                
-
+ 
                 <div class="beneficio">
                     <h3>Professores preparados</h3>
-                    <p>Acompanhamentos para iniciantes, intermediários e avançados.</p>
+                    <p>Acompanhamento para iniciantes, intermediários e avançados.</p>
                 </div>
-
+ 
                 <div class="beneficio">
                     <h3>Ambiente motivador</h3>
-                    <p>Espaço moderno, lipo e organizado para você evoluir todos os dias.</p>
+                    <p>Espaço moderno, limpo e organizado para você evoluir todos os dias.</p>
                 </div>
             </div>
-            </section>
-            <section class="planos" id="planos">
-                <h2>Nossos Planos</h2>
-                <p class="subtitulo">Escolha o plano ideal para o seu objetivo.</p>
-
-                <div class="cards-planos">
-                    <div class="card">
-                        <h3>Plano Básico</h3>
-                        <p class="preco">R$ 79,90</p>
-
-                        <ul>
-                            <li>Musculação</li>
-                            <li>Horário comercial</li>
-                            <li>Avaliação inicial</li>
-                        </ul>
-                        <button>Escolher Plano</button>
-                    </div>
-                    <div class="card">
-                        <h3>Plano Básico</h3>
-                        <p class="preco">R$ 79,90</p>
-
-                        <ul>
-                            <li>Musculação</li>
-                            <li>Horário comercial</li>
-                            <li>Avaliação inicial</li>
-                        </ul>
-                        <button>Escolher Plano</button>
-                    </div>
-                    <div class="card">
-                        <h3>Plano Básico</h3>
-                        <p class="preco">R$ 79,90</p>
-
-                        <ul>
-                            <li>Musculação</li>
-                            <li>Horário comercial</li>
-                            <li>Avaliação inicial</li>
-                        </ul>
-                        <button>Escolher Plano</button>
-                    </div>
+        </section>
+ 
+        <!--Terceira parte da tela Planos-->
+        <section class="planos" id="planos">
+            <h2>Nossos Planos</h2>
+            <p class="subtitulo">Escolha o plano ideal para o seu objetivo.</p>
+ 
+            <div class="cards-planos">
+               
+                <div class="card">
+                    <h3>Plano Básico</h3>
+                    <p class="preco">R$ 79,90</p>
+                   
+                    <ul>
+                        <li>Musculação</li>
+                        <li>Horário comercial</li>
+                        <li>Avaliação inicial</li>
+                    </ul>
+                    <button>Escolher Plano</button>
                 </div>
-            </section>
-        </main>
+ 
+                <div class="card destaque">
+                    <h3>Plano Premium</h3>
+                    <p class="preco">R$ 119,90</p>
+                   
+                    <ul>
+                        <li>Musculação completa</li>
+                        <li>Aulas coletivas</li>
+                        <li>Acesso todos os dias</li>
+                    </ul>
+                    <button>Escolher Plano</button>
+                </div>
+ 
+                <div class="card">
+                    <h3>Plano Black</h3>
+                    <p class="preco">R$ 159,90</p>
+                   
+                    <ul>
+                        <li>Acesso ilimitado</li>
+                        <li>Treino personalizado</li>
+                        <li>Área funcional</li>
+                    </ul>
+                    <button>Escolher Plano</button>
+                </div>
+            </div>
+        </section>
+ 
+       <section class="galeria">
+            <h2>Estrutura da Academia</h2>
+ 
+            <div class="imagens">
+ 
+                <div class="imagem img1">
+                    <h2>Musculação</h2>
+                </div>
+ 
+                <div class="imagem img2">
+                    <h2>Cardio</h2>
+                </div>
+ 
+                <div class="imagem img3">
+                    <h2>Funcional</h2>
+                </div>
+ 
+            </div>
+        </section>
+ 
+        <section class="contato" id="contato">
+            <h2>Entre em Contato</h2>
+            <p class="subtitulo">Preencha o formulário e nossa equipe falará com você.</p>
+           
+            <form id="formContato">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" placeholder="Digite seu nome">
+ 
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="Digite seu e-mail">
+ 
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" placeholder="Digite sua mensagem"></textarea>
+ 
+                <button type="submit" class="botao">Enviar Mensagem</button>
+            </form>
+ 
+            <p class="resposta" id="resposta"></p>
+        </section>
+ 
+        <footer class="rodape">
+            <p>FitLife Academia &copy;2026</p>
+            <p>Desenvilvido pelos alunos de Desenvolvimento de Sistemas</p>
+        </footer>
+    </main>
 </body>
 </html>

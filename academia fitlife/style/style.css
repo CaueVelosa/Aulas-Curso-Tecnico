@@ -1,114 +1,117 @@
-html{
-    scroll-behavior: smooth;
-}
 
+html{
+    scroll-behavior: smooth; /*muda a página para onde queremos é instantâneo*/
+}
+ 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #000000;
-    color: #ffffff;
+    background-color: black;
+    color: white;
 }
-
+ 
 .cabecalho{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
-    z-index: 1000;
-    top: 0%;
+    position: fixed; /*fixa o cabeçalho para ele não mudar de lugar*/
+    z-index: 1000; /*vai fixar e ficar cada vez mais para frente (tem que ficar embaixo do position)*/
+    top: 0;
     width: 100%;
-    padding: 20px 8%;
+    padding: 20px 8%; /*8% para dar um recuo*/
     background-color: #050505;
-    border-bottom: 1px solid #00ff88;
+    border-bottom: 1px solid #00ff88; /*coloca a linha inferior*/
 }
-
+ 
 .logo{
     font-size: 30px;
     font-weight: bold;
 }
-
+ 
 .logo span{
     color: #00ff88;
 }
-
+ 
 .menu ul{
     display: flex;
     gap: 20px;
-    list-style-type: none;
+    list-style: none;
 }
-
+ 
 .menu a{
-    color: #fff;
+    color: white;
     text-decoration: none;
     font-weight: 600;
     transition: 0.3s;
 }
-
+ 
 .menu a:hover{
     color: #00ff88;
 }
-
+ 
 .hero{
     min-height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.8)),url(../src/hero.avif);
-    background-size: cover;
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.8)), url(../src/hero.avif);
+    background-size: cover; /*faz a imagem preecher toda a tela, evitando espaço vázio*/
     background-position: center;
+    align-items: center;
     display: flex;
     padding: 120px 8%;
-    align-items: center;
 }
-
+ 
 .hero-conteudo{
     max-width: 650px;
 }
-
+ 
 .hero h1{
     font-size: 56px;
     margin-bottom: 20px;
+    color: #dddddd;
 }
-
+ 
 .hero p{
     font-size: 20px;
     margin-bottom: 30px;
-    color: #dddd;
+    color: #dddddd;
 }
-
+ 
 .botao{
-    display: inline-block;
+    display: inline-block; /*faz o elemento ficar lado a lado*/
+    padding: 15px 30px;
     background-color: #00ff88;
-    border-radius: 30px;
-    color: #000000;
-    padding: 20px 40px;
+    border-radius: 50px;
     text-decoration: none;
+    color: black;
     font-weight: 600;
     transition: 0.3s;
+    border: none;
 }
-
+ 
 .botao:hover{
-    background-color: #fff;
-    transform: scale(1.5);
+    background-color: white;
+    transform: scale(1.05);
 }
-
+ 
 section{
     padding: 80px 8%;
 }
-
+ 
 section h2{
     font-size: 36px;
-    margin-bottom: 15px;
     text-align: center;
+    margin-bottom: 15px;
     color: #cccccc;
 }
-
+ 
 .sobre{
-    background-color: #000000;
+    background-color: black;
 }
-
+ 
 .beneficios{
     display: flex;
     gap: 25px;
     justify-content: center;
 }
-
+ 
 .beneficio{
     background-color: #111;
     padding: 30px;
@@ -117,68 +120,68 @@ section h2{
     width: 100%;
     transition: 0.3s;
 }
-
+ 
 .beneficio:hover{
     border-color: #00ff88;
     transform: translateY(-8px);
 }
-
+ 
 .beneficio h3{
     color: #00ff88;
-    margin-bottom: 15px ;
+    margin-bottom: 15px;
 }
-
+ 
 .beneficio p{
     color: #ccc;
     line-height: 1.6;
 }
-
+ 
 .planos{
-    background-color: #000000;
+    background-color: black;
 }
-
+ 
 .subtitulo{
     text-align: center;
-    color: #cccccc;
+    color: #ccc;
     margin-bottom: 40px;
 }
-
+ 
 .cards-planos{
     display: flex;
     gap: 25px;
     justify-content: center;
 }
-
+ 
 .card{
     background-color: #111;
     width: 100%;
     max-width: 320px;
     border-radius: 18px;
     padding: 30px;
-    border: 1px solid #000000;
+    border: 1px solid #222;
     text-align: center;
     transition: 0.3s;
 }
-
+ 
 .card:hover{
     transform: translateY(-10px);
     border-color: #00ff88;
 }
-
+ 
 .card ul{
     list-style: none;
     margin: 20px 0;
     padding: 0;
 }
-
+ 
 .card li{
     margin: 12px 0;
-    color: #dddd;
+    color: #ddd;
 }
-
+ 
 .card button{
     background-color: #00ff88;
-    color: #000000;
+    color: black;
     border: none;
     padding: 14px 25px;
     border-radius: 25px;
@@ -186,15 +189,117 @@ section h2{
     cursor: pointer;
     transition: 0.3s;
 }
-
-button:hover{
-    transform: scale(1.2);
-    background-color: #cccccc;
+ 
+.card button:hover{
+    transform: scale(1.05);
+    background: white;
 }
-
+ 
 .preco{
     color: #00ff88;
-    font-size: 30px;
     font-weight: 600;
     margin-bottom: 20px;
+    font-size: 30px;
 }
+ 
+.destaque{
+    border: 1px solid #00ff88;
+}
+ 
+.galeria{
+    background-color: black;
+}
+ 
+.imagens{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+ 
+.imagens img{
+    width: 100%;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+ 
+.imagem{
+    display: flex;
+    height: 250px;
+    border-radius: 18px;
+    background-size: cover;
+    background-position: center;
+    align-items: end;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    overflow: hidden;
+}
+ 
+.imagem h2{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+ 
+.img1{
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.8)), url(../src/musculacao.avif);
+}
+ 
+.img2{
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.8)), url(../src/cardio.avif);
+}
+ 
+.img3{
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.8)), url(../src/funcional.avif);
+}
+ 
+.contato{
+    background-color: black;
+}
+ 
+form{
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #111;
+    padding: 30px;
+    border-radius: 18px;
+    border: 1px solid #222;
+}
+ 
+.label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+ 
+input, textarea{
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+ 
+textarea{
+    height: 120px;
+    resize: none; /*não permite o usuário aumentar o tamanho da caixa de texto*/
+}
+ 
+.resposta{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #00ff88;
+}
+ 
+.rodape{
+    background-color: #050505;
+    text-align: center;
+    padding: 30px;
+    color: #ccc;
+    border-top: 1px solid #00ff88;
+}
+ 
