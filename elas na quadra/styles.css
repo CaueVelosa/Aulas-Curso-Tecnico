@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --laranja: #ff5a1f;
+    --preto: #080808;
+    --claro: #f5f1e8;
+    --fonte: Arial, sans-serif;
+}
+
+.cabecalho{
+    color: #f5f1e8;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    padding: 15px 10px;
+    background-color: rgba(0,0,0,0);
+    border-bottom: #f5f1e8ab 0.5px solid; 
+    padding-bottom: 40px;
+}
+
+.menuu{
+    padding-top: 25px;
+    font-family: var(--fonte);
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-weight: bolder;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding-left: 1250px;
+}
+
+.logo{
+    padding-top: 25px;
+    font-family: var(--fonte);
+    display: flex;
+    font-weight: bolder;
+    list-style: none;
+    padding-left: 100px;
+    font-size: 25px;
+}
+
+.logo p{
+    display: flex;
+    gap: 3px
+}
+
+.logo span   {
+    color: #ff5a1f;
+}
+
+.hero{
+    min-height: 100vh;
+    background: linear-gradient(90deg, #050505 0%, rgba(5, 5, 5, 0.86) 34%, rgba(5, 5, 5, 0.18) 75%),
+      linear-gradient(0deg, #050505 0%, transparent 35%),
+ url(images/hero-basquete-feminino.png);
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    display: flex;
+    padding: 80px 8%;
+}
+
+.hero-conteudo{
+    color: var(--claro);
+    max-width: 40%;
+    line-height: 85px;
+}
+
+.hero-conteudo h1{
+    font-family: var(--fonte);
+    font-weight: 900;
+    font-size: 100px;
+}
+
+
+.hero-conteudo span{
+    color: var(--laranja);
+}
+
+.hero-conteudo h3{
+    color: var(--laranja);
+    font-family: var(--fonte);
+    font-weight: 600;
+}
+
+.hero-conteudo p{
+    font-size: 20px;
+    margin-top: 20px;
+    font-family: var(--fonte);
+    font-weight: 500;
+    max-width: 500px;
+    line-height: 20px;
+    border-left: 2px solid var(--laranja);
+    padding-left: 12px;
+}
