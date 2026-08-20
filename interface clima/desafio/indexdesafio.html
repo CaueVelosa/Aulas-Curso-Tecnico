@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styledesafio.css">
+
+    <title>Previsão do Tempo</title>
+</head>
+
+<body>
+    <!-- <img class="bannerClima" id="fundoclima" src="imagem-ceu.jpg"> -->
+
+    <main class="container">
+
+        
+        <h1>Previsão do Tempo</h1>
+        
+        <p>Digite o nome de uma cidade para consultar o clima atual.</p>
+        
+        <section class="busca">
+            
+            <input 
+            type="text" 
+            id="cidade" 
+            placeholder="Digite uma cidade"
+            >
+            
+            <button id="buscar">
+                Buscar
+            </button>
+            
+        </section>
+        
+        <h2 id="nomeCidade">Cidade</h2>
+        <section class="resultado">
+
+
+            <p class="temperatura"><span id="temperatura">--</span> °C</p>
+            
+            <p class="sensacao">Sensação térmica<span id="sensacao">--</span> °C</p>
+
+            <p class="clima">Clima<span id="clima">--</span></p>
+
+            <p class="umidade">Umidade<span id="umidade">--</span>%</p>
+
+            <p class="vento">Vento<span id="vento">--</span> km/h</p>
+
+            <p class="rajada">Rajada de ventos<span id='rajada'>--</span></p>
+
+            <p class="sol">Sol<span id='sol'>--</span></p>
+
+            <p class="lua">Lua<span id='lua'>--</span></p>
+        </section>
+
+    </main>
+
+    <script src="scriptdesafio.js"></script>
+
+</body>
+
+</html>
