@@ -11,7 +11,7 @@ function buscarClima() {
         return;
     }
 
-    const chaveApi = "283d21c020434ac353042ac07013c458";
+    const chaveApi = "CHAVE_API";
 
     const url =
         `https://api.openweathermap.org/data/2.5/weather?q=${cidade}&appid=${chaveApi}&units=metric&lang=pt_br`;
@@ -79,3 +79,4 @@ function buscarClima() {
             alert("Não foi possível encontrar a cidade.");
         });
 }
+283d21c020434ac353042ac07013c458
