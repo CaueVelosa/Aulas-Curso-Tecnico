@@ -1,27 +1,65 @@
-root {
-  --green: #16a34a;
-  --green-dark: #15803d;
-  --green-light: #dcfce7;
-  --green-pale: #f0fdf4;
-  --slate-900: #0f172a;
-  --slate-700: #334155;
-  --slate-500: #64748b;
-  --slate-400: #94a3b8;
-  --slate-200: #e2e8f0;
-  --slate-100: #f1f5f9;
-  --white: #ffffff;
-  --bg: #f8fafc;
-  --font-display: 'Outfit', sans-serif;
-  --font-body: 'Inter', sans-serif;
+:root {
+    --green: #16a34a;
+    --green-dark: #15803d;
+    --green-light: #dcfce7;
+    --green-pale: #f0fdf4;
+    --slate-900: #0f172a;
+    --slate-700: #334155;
+    --slate-500: #64748b;
+    --slate-400: #94a3b8;
+    --slate-200: #e2e8f0;
+    --slate-100: #f1f5f9;
+    --white: #ffffff;
+    --bg: #f8fafc;
+    --font-display: 'Outfit', sans-serif;
+    --font-body: 'Inter', sans-serif;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     background-color: var(--bg);
 }
 
-header{
+.cabecalho {
     display: flex;
+    margin: 15px 0 0 240px;
     border-bottom: 0.5px solid rgb(221, 221, 221);
+    justify-content: space-between  ;
+    
 }
+
+.logo-icone{
+    color: var(--green);
+    margin-right:20px ;
+    width: 35px;
+    height: 35px;
+}
+
+.logo{
+    font-family: var(--font-display);
+    height: 600;
+    display: flex;
+
+}
+
+.logo-titulo span{
+    color: var(--green);
+    margin-bottom: 10px;
+}
+
+.menu{
+    display: flex;
+    margin-right: 240px;
+    gap: 10px;
+    text-decoration: none;
+    font-family: var(--font-display);
+    font-size: 20px;
+    height: 600;
+}
+
+.b,.c,.a{
+    text-decoration: none;
+    color: var(--slate-500);
+}
+

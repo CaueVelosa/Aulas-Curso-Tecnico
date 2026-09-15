@@ -1,41 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>PedalFácil</title>
+
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+    >
 </head>
+
 <body>
-    <header>
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="5.5" cy="17.5" r="3.5"/><circle cx="18.5" cy="17.5" r="3.5"/>
-            <path d="M5.5 17.5l3-8 4 3 2.5-5H19l-3.5 3.5"/>
-        </svg>
 
-        <h1>Pedal<span>Fácil</span></h1>
+    <header class="cabecalho">
 
-        <a href="#">Bikes</a>
-        <a href="#">Como funciona</a>
-        <a href="#">Alugar</a>
+        <div class="logo">
+            <svg
+                class="logo-icone"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            >
+                <circle cx="5.5" cy="17.5" r="3.5" />
+                <circle cx="18.5" cy="17.5" r="3.5" />
+                <path d="M5.5 17.5l3-8 4 3 2.5-5H19l-3.5 3.5" />
+            </svg>
+<!-- ----------------------------------------------------------- -->
+            <h1 class="logo-titulo">
+                Pedal<span>    Fácil</span>
+            </h1>
+        </div>
+
+        <nav class="menu">
+            <a class="menu-link b" href="#">Bikes</a>
+            <a class="menu-link c" href="#">Como funciona</a>
+            <a class="menu-link a" href="#">Alugar</a>
+        </nav>
+
     </header>
-    <main>
-        <div>
-            <H3>LOCAÇÃO DE BICICLETAS</H3>
-            <h1>Pedale com liberdade, sem complicação.</h1>
-            <h2>Alugue a bike ideal para sua aventura ou para o dia a dia. Frota variada, preçoes acessíveis e processo 100% online.</h2>
-        </div>
-        <div>
-            <a href="#">Ver bike disponíveis</a>
-            <a href="#">como funciona</a>
-        </div>
 
+    <main class="principal">
 
+        <section class="hero">
 
-        <img src="https://images.unsplash.com/photo-1629056528325-f328b5f27ae7?w=700&h=600&fit=crop&auto=format" alt="">
+            <div class="hero-conteudo">
+                <h3 class="hero-subtitulo">
+                    LOCAÇÃO DE BICICLETAS
+                </h3>
+
+                <h1 class="hero-titulo">
+                    Pedale com liberdade, sem complicação.
+                </h1>
+
+                <h2 class="hero-descricao">
+                    Alugue a bike ideal para sua aventura ou para o dia a dia.
+                    Frota variada, preços acessíveis e processo 100% online.
+                </h2>
+
+                <div class="hero-botoes">
+                    <a class="botao-principal" href="#">
+                        Ver bikes disponíveis
+                    </a>
+
+                    <a class="botao-secundario" href="#">
+                        Como funciona
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-imagem">
+                <img
+                    class="imagem-bike"
+                    src="https://images.unsplash.com/photo-1629056528325-f328b5f27ae7?w=700&h=600&fit=crop&auto=format"
+                    alt="Bicicleta"
+                >
+            </div>
+
+        </section>
+
     </main>
+
 </body>
+
 </html>
+
