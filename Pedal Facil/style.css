@@ -79,11 +79,11 @@
 
 .principal{
     padding-top: 100px;
+    background-color: var(--bg);
 }
 
 body {
     font-family: var(--font-body);
-    color: var(--slate-900);
 }
 
 
@@ -166,7 +166,11 @@ body {
 .imagem-bike{
     border-radius: 40px;
 }
+/* ------------------------------------------------------------------------- */
 
+.secundaria{
+
+}
 
 
 
