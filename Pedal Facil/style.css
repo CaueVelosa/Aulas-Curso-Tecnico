@@ -18,14 +18,13 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: var(--bg);
 }
 
 .cabecalho {
     display: flex;
     border-bottom: 0.5px solid rgb(221, 221, 221);
     justify-content: space-between  ;
-    background-color: var(--slate-100);
+    background-color: var(--bg);
     position: fixed;
     width: 100%;
 }
@@ -35,25 +34,25 @@
     margin: 15px 0 15px 240px;
     width: 35px;
     height: 35px;
-    background-color: var(--slate-100);
+    background-color: var(--bg);
 }
 
 .logo{
     font-family: var(--font-display);
     height: 600;
     display: flex;
-        background-color: var(--slate-100);
+        background-color: var(--bg);
 }
 
 .logo-titulo{
     margin: 15px 0 15px 10px;
-    background-color: var(--slate-100);
+    background-color: var(--bg);
 }
 
 .logo-titulo span{
     color: var(--green);
     margin-bottom: 10px;
-    background-color: var(--slate-100);
+    background-color: var(--bg);
 }
 
 .menu{
@@ -64,14 +63,14 @@
     font-family: var(--font-display);
     font-size: 20px;
     height: 600;
-    background-color: var(--slate-100);
+    background-color: var(--bg);
 }
 
 .b,.c,.a{
     text-decoration: none;
     color: var(--slate-500);
     margin-top: 20px;
-    background-color: var(--slate-100);
+    background-color: var(--bg);
 }
 
 /* ------------------------------------------------------------------ */
@@ -169,7 +168,21 @@ body {
 /* ------------------------------------------------------------------------- */
 
 .secundaria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+    background-color: var(--slate-200);
+    font-family: var(--font-display);
+}
 
+.titulo_secundario{
+    margin: 200px 0 0 100px;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
 }
 
 
