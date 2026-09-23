@@ -254,6 +254,8 @@ body {
     opacity: 0.15;
 }
 
+/* -------------------------------------------- */
+
 .terciaria{
 
     font-family: var(--font-display);
@@ -262,7 +264,7 @@ body {
 }
 
 .terciaria_menu{
-    padding: 150px 0 0 200px;
+    padding: 150px 0 0 170px;
     background-color: var(--bg);
 }
 
@@ -279,21 +281,44 @@ body {
     margin-left: 1200px;
 }
 
-.card_bike_1{
+.card_bike_1,.card_bike_2,.card_bike_3,.card_bike_4{
     background-color: #ffffff;
     max-width: 300px;
     object-fit: contain;
+    border-radius: 15px;
 }
 
-.bike1{
+.bike1,.bike2,.bike3,.bike4{
     max-width: 100%;
-
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .cardes{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    max-width: 90%;
+    margin-left: 170px;
+    border-radius: 20px;
 }
+
+.pop{
+    position: absolute;
+    border-radius: 20px;
+    background-color: var(--green);
+    border-radius: 20px;
+    padding: 5px 20px 9px 20px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 900;
+    margin: 10px 0 0 15px;
+}
+
+.card_bike_1{
+    
+}
+
+
 
 
 
